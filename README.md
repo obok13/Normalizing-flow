@@ -1,5 +1,5 @@
 # Normalizing flow
-This is the Pytorch implementation of Masked autoregressive flow and Inverse autoregressive flow.
+This is the Pytorch implementation of Masked autoregressive flow (MAF) and Inverse autoregressive flow (IAF).
 
 Normalizing flow에 관한 설명은 제 [블로그](https://www.notion.so/obok13/Normalizing-flow-60e0349babef4ed88654c717afab931d)에 있습니다.
 

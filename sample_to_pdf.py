@@ -23,7 +23,7 @@ train_data = torch.cat((x1,x2), -1).to(device)
 
 # training
 
-nn_maf = MAF(in_features = 2, MADE_shape = [16,16], act = torch.sin, n_of_MADE = 3, device = device).to(device)
+nn_maf = MAF(in_dim = 2, made_hidden_shape = [16,16], made_act = torch.sin, n_made = 3, device = device).to(device)
 optimizer = torch.optim.Adam(nn_maf.parameters(), lr=0.001)
 nn_maf.total_training(optimizer = optimizer, train_data = train_data, KL=False, iteration = 10000)
 

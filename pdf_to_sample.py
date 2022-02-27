@@ -22,7 +22,7 @@ def log_target(x):
 
 # training
 
-nn_iaf = IAF(in_features = 2, MADE_shape = [16,16], act = torch.sin, n_of_MADE = 3, device = device).to(device)
+nn_iaf = IAF(in_dim = 2, made_hidden_shape = [16,16], made_act = torch.sin, n_made = 3, device = device).to(device)
 optimizer = torch.optim.Adam(nn_iaf.parameters(), lr=0.001)
 nn_iaf.total_training(optimizer = optimizer, log_x = log_target, KL=False, iteration = 10000)
 
